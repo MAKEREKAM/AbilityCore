@@ -15,6 +15,6 @@ class Main : JavaPlugin() {
         Bukkit.getPluginCommand("abilitycore")?.setExecutor(Cmd())
         Bukkit.getPluginCommand("ac")?.setExecutor(Cmd())
 
-        register(SkillList.VAMPIRE, "§c뱀파이어", "§a근처에 있는 엔티티의 수만큼 회복합니다.", Material.REDSTONE_BLOCK, Vampire())
+        register(SkillList.VAMPIRE, "§c뱀파이어", "§a근처에 있는 엔티티의 수만큼 회복합니다.", Material.REDSTONE_BLOCK, Vampire(), 20)
     }
 }

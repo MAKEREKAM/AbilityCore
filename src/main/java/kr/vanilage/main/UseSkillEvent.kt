@@ -14,10 +14,11 @@ class UseSkillEvent : Listener {
         val ability = playerAbility[e.player.uniqueId]
 
         if (wands[ability] != e.player.inventory.itemInMainHand.type) return
+        if (e.player.hasCooldown(wands[ability]!!)) return
+        if (e.player.gameMode != GameMode.CREATIVE) e.player.inventory.itemInMainHand.amount--
+        if (e.player.gameMode != GameMode.CREATIVE) e.player.setCooldown(wands[ability]!!, coolAbility[ability]!!)
 
         classAbility[ability]?.event(e.player)
-
-        if (e.player.gameMode != GameMode.CREATIVE) e.player.inventory.itemInMainHand.amount--
 
         e.isCancelled = true
     }
