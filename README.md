@@ -1,8 +1,10 @@
 # AbilityCore
 마인크래프트 능력자 시스템
 
+# 설정 가이드
 
 SkilList.kt 파일(https://github.com/MAKEREKAM/AbilityCore/blob/master/src/main/java/kr/vanilage/main/SkillList.kt)에 자신이 추가할 능력을 넣습니다
+
 
 Main 클래스 (https://github.com/MAKEREKAM/AbilityCore/blob/master/src/main/java/kr/vanilage/main/Main.kt)의 밑쪽에 register() 함수를 작성합니다.
 
@@ -10,6 +12,7 @@ Main 클래스 (https://github.com/MAKEREKAM/AbilityCore/blob/master/src/main/ja
 register(SkillList."방금 작성한 능력명", "능력 설명 창에 표시될 이름 (능력 이름), "능력 설명", 이벤트를 발동할 때 사용할 아이템 타입(Material), 밑에서 작성할 이벤트 클래스의 객체 (class()처럼 작성), 능력 쿨타임(틱 단위, 크리에이티브에서는 적용되지 않음))
 ```
 의 형태로 작성합니다.
+
 
 능력이 실행될 이벤트 클래스를 만듭니다. (가능하면 abilities 패키지 안에 작성)
 
