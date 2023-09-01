@@ -5,7 +5,7 @@ plugins {
 group = "kr.vanilage"
 version = "1.0" // 여기에 버전을 작성하세요.
 
-var buildPath = "D:\\Programming\\Mcserver\\연구소\\plugins\\update"
+var buildPath = ""
 
 repositories {
     mavenCentral()
